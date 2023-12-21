@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del curriculum */
+.cv {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del encabezado */
+.cv__header {
+    text-align: center;
+}
+
+.cv__photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.cv__name {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos de las secciones */
+.cv__section-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo del resumen */
+.cv__resumen {
+    color: #332;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Estilos de la información personal */
+.cv__experience, .cv__info-item, .cv__experience-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cv__info-detail, .cv__experience-detail, .cv__experience-date {
+    color: #330;
+}
