@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Cinema</title>
+    </head>
+    <body class="marco">
+        <div id="cabecera" class="header__foot--color">
+            <h1>UNIR - CINEMA</h1>
+        </div>
+        <div id="pantalla">
+        </div>
+        <br>
+        <div>
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th>Fila 1</th>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                    </tr>
+                    <tr>
+                        <th>Fila 2</th>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                    </tr>
+                    <tr>
+                        <th>Fila 3</th>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                    </tr>
+                    <tr>
+                        <th>Fila 4</th>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                    </tr>
+                    <tr>
+                        <th>Fila 5</th>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                        <td estilo="ocupado"> </td>
+                        <td estilo="desocupado"> </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <br>
+        <form class="form__center">
+            <br>
+
+            <label>
+                <input id="suggested" type="number" min="1" max="10" value="0" oninput="(() => {
+               let seats = suggest(this.value, seatsSetup);
+               console.log(seats);
+            })()">
+            </label>
+            <button>Confirmar reserva</button>
+            <button name="confirmarreserva" type="button">Confirmar Reserva</button>
+        </form>
+        <div id="footer" class="header__foot--color center">
+            <p>Cine UNIR-CINEMA</p>
+            <p><strong>Dirección: </strong>Calle Av la Paz. 137 y Lagroño</p>
+            <p><strong>Teléfono: </strong>941209743</p>
+            <p><a href="mailTo:cinefullstack@unirscinema.com">Email:cinefullstack@unirscinema.com</a></p>
+        </div>
+        
+        <script src="cinema.js"></script>
+
+    </body>
+</html>
